@@ -39,7 +39,7 @@ public class PetController {
     }
 
     @DeleteMapping("/{id}")
-    public String deleteSupplier(@PathVariable("id") Long id) throws InstanceNotFoundException {
+    public String deletePet(@PathVariable("id") Long id) throws InstanceNotFoundException {
         return petService.deletePet(id);
     }
 

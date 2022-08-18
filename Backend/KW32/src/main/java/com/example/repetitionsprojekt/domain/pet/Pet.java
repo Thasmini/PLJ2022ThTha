@@ -23,7 +23,7 @@ public class Pet {
 
     @NotNull
     @Column(name = "age")
-    int age;
+    String age;
 
     @NotNull
     @Column(name = "breed")
@@ -36,8 +36,5 @@ public class Pet {
     @Column(name = "url")
     String url;
 
-    @NotNull
-    @Column(name = "status")
-    String status;
 
 }

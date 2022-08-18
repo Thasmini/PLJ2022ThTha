@@ -38,7 +38,6 @@ public class PetService {
         pet.setBreed(newPet.getBreed());
         pet.setUrl(newPet.getUrl());
         pet.setGender(newPet.getGender());
-        pet.setStatus(newPet.getStatus());
 
         return petRepository.save(pet);
     }
