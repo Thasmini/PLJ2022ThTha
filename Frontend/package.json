@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "container": "^0.0.2",
+    "formik": "^2.2.9",
+    "grid": "^4.10.8",
+    "mui": "^0.0.1",
+    "react-router-dom": "^6.3.0"
+  }
+}
