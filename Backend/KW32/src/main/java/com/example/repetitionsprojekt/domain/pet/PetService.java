@@ -1,4 +1,4 @@
-package com.example.repetitionsprojekt.domain.todolist;
+package com.example.repetitionsprojekt.domain;
 
 import org.springframework.stereotype.Service;
 
