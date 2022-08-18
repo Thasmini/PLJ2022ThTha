@@ -1,39 +1,43 @@
-package com.example.repetitionsprojekt.domain;
+package com.example.repetitionsprojekt.domain.pet;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.Builder;
+import lombok.*;
 
 import com.sun.istack.NotNull;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 
 @Entity
-@Data
-@NoArgsConstructor // generates emprty constructor for the class
-@AllArgsConstructor // generates a constructorr with all the fielss that are available in the class
-@Builder
-
+@Setter
+@Getter
+@RequiredArgsConstructor
 public class Pet {
+
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    Long id;
+
     @NotNull
-    @Column
-    int id;
-    @Column
+    @Column(name = "name")
     String name;
-    @Column
+
+    @NotNull
+    @Column(name = "age")
     int age;
-    @Column
+
+    @NotNull
+    @Column(name = "breed")
     String breed;
-    @Column
+
+    @NotNull
+    @Column(name = "gender")
     String gender;
-    @Column
-    boolean available;
-    @Column
+
+    @Column(name = "url")
     String url;
+
+    @NotNull
+    @Column(name = "status")
+    String status;
 
 }

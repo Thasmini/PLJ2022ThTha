@@ -2,6 +2,7 @@ package com.example.repetitionsprojekt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class RepetitionsprojektApplication {
@@ -9,5 +10,6 @@ public class RepetitionsprojektApplication {
     public static void main(String[] args) {
         SpringApplication.run(RepetitionsprojektApplication.class, args);
     }
+
 
 }
